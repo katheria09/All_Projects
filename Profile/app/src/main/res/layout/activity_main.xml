@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.travel.shekhar.profile.MainActivity">
+
+
+    <android.support.constraint.Guideline
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="20dp"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:text="Save"
+        android:layout_width="100dp"
+        android:layout_height="30sp"
+        android:id="@+id/textView2"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_blue_light"
+        tools:layout_editor_absoluteX="312dp"
+        tools:layout_editor_absoluteY="20dp"
+        android:layout_below="@+id/guideline"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Edit"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:id="@+id/textView11"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_blue_light"
+        app:layout_constraintRight_toRightOf="@+id/editText"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+        android:layout_alignBaseline="@+id/textView10"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="    Personal Details                              "
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:id="@+id/textView3"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_green_light"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Edit"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:id="@+id/textView8"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_blue_light"
+        app:layout_constraintRight_toRightOf="@+id/editText"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="    Delivery Address"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/textView"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_green_light"
+        tools:layout_editor_absoluteY="176dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView6"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="           Enter the complete address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:textStyle="normal|bold"
+        android:textSize="16sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:text="           Enter the complete address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="43dp"
+        android:layout_toLeftOf="@+id/textView11"
+        android:layout_toRightOf="@+id/guideline"
+        android:layout_toEndOf="@+id/guideline" />
+
+    <Button
+        android:text="   Add New Address  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40sp"
+        android:text="Mobile No."
+        android:ems="10"
+        android:id="@+id/editText2"
+        app:layout_constraintLeft_toRightOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView6"
+        android:inputType="number|phone"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:text="Password"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40sp"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="64dp"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="  Name:"
+        android:layout_width="136sp"
+        android:layout_height="30sp"
+        tools:layout_editor_absoluteY="64dp"
+        android:id="@+id/textView5"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginTop="28dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView3"
+        android:layout_toLeftOf="@+id/editText"
+        android:layout_toStartOf="@+id/editText" />
+
+    <TextView
+        android:text="  Contact:"
+        android:layout_width="136dp"
+        android:layout_height="30dp"
+        android:id="@+id/textView6"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="105dp"
+        android:layout_marginTop="28dp"
+        android:textStyle="normal|bold"
+        android:textSize="16sp"
+        android:layout_below="@+id/editText"
+        android:layout_toLeftOf="@+id/editText2"
+        android:layout_toStartOf="@+id/editText2" />
+
+    <TextView
+        android:text="  Password:"
+        android:layout_width="136dp"
+        android:layout_height="30dp"
+        android:id="@+id/textView4"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/editText2"
+        android:layout_toLeftOf="@+id/editText3"
+        android:layout_toStartOf="@+id/editText3" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.travel.shekhar.mymenu.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/update1"
+        android:title="Update">
+    </item>
+
+
+    <item
+        android:id="@+id/Save"
+        android:title="Save">
+        <menu>
+            <item
+                android:title="A"></item>
+                <item
+                    android:title="AB"></item>
+                    <item
+                        android:title="ABC"></item>
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/Delete"
+        android:title="Delete">
+    </item>
+</menu>

@@ -1,0 +1,240 @@
+<android.support.design.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/MyAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/background"
+            android:fitsSystemWindows="true">
+
+            <ImageView
+                android:id="@+id/bgheader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="pin" />
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/MyToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="parallax" />
+
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="510dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:text="  Password:"
+                android:layout_width="136dp"
+                android:layout_height="30dp"
+                android:id="@+id/textView4"
+                android:textSize="16sp"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="27dp"
+                android:layout_below="@+id/editText2"
+                android:layout_toLeftOf="@+id/editText3"
+                android:layout_toStartOf="@+id/editText3" />
+
+            <TextView
+                android:text="Save"
+                android:layout_width="100dp"
+                android:layout_height="30sp"
+                android:id="@+id/textView2"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_light"
+                android:background="@android:color/holo_blue_light"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:text="   Add New Address  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                android:textColor="@android:color/background_light"
+                android:background="@android:color/holo_blue_light"
+                android:layout_marginBottom="59dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="40sp"
+                android:text="Mobile No."
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:inputType="number|phone"
+                android:layout_above="@+id/textView10"
+                android:layout_alignLeft="@+id/editText"
+                android:layout_alignStart="@+id/editText" />
+
+            <TextView
+                android:text="    Delivery Address"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/textView"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"
+                android:background="@color/title"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="  Name:"
+                android:layout_width="136sp"
+                android:layout_height="30sp"
+                android:id="@+id/textView5"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:layout_alignBaseline="@+id/editText"
+                android:layout_alignBottom="@+id/editText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="  Contact:"
+                android:layout_width="136dp"
+                android:layout_height="30dp"
+                android:id="@+id/textView6"
+                android:textStyle="normal|bold"
+                android:textSize="16sp"
+                android:layout_marginTop="63dp"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="40sp"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_below="@+id/textView2"
+                android:layout_toRightOf="@+id/textView5"
+                android:layout_toEndOf="@+id/textView5" />
+
+            <TextView
+                android:text="           Enter the complete address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7"
+                android:textStyle="normal|bold"
+                android:textSize="16sp"
+                android:layout_marginTop="87dp"
+                android:layout_below="@+id/textView10"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="           Enter the complete address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10"
+                android:textSize="16sp"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="152dp"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="Edit"
+                android:layout_width="90dp"
+                android:layout_height="25dp"
+                android:id="@+id/textView8"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"
+                android:background="@android:color/holo_blue_light"
+                android:layout_above="@+id/textView7"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText3"
+                android:text="Password"
+                android:layout_above="@+id/textView"
+                android:layout_toRightOf="@+id/textView6"
+                android:layout_toEndOf="@+id/textView6" />
+
+            <TextView
+                android:text="Edit"
+                android:layout_width="90dp"
+                android:layout_height="25dp"
+                android:id="@+id/textView11"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"
+                android:background="@android:color/holo_blue_light"
+                android:layout_alignBottom="@+id/textView7"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="    Personal Details                              "
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:id="@+id/textView3"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"
+                android:background="@color/title"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+
