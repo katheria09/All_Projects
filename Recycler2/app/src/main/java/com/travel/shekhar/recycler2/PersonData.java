@@ -6,32 +6,37 @@ package com.travel.shekhar.recycler2;
 public class PersonData {
 
 
-    String name;
-    String email;
-    int image;
+    String shop;
+    String amount;
+    String order;
+    String date;
+
     int id_;
 
-    public PersonData(String name, String email, int image, int id_) {
-        this.name = name;
-        this.email = email;
-        this.image = image;
+    public PersonData(String shop, String amount, String order, String date , int id_) {
+        this.shop=shop;
+        this.amount=amount;
+        this.order=order;
+        this.date=date;
         this.id_ = id_;
     }
 
 
-    public String getName() {
-        return name;
+    public String getShop() {
+        return shop;
     }
 
 
-    public String getEmail() {
-        return email;
+    public String getAmount() {
+        return amount;
     }
 
 
-    public int getImage() {
-        return image;
+    public String getOrder() {
+        return order;
     }
+
+    public String getDate() {return date;}
 
     public int getId() {
         return id_;

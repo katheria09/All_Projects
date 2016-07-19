@@ -20,5 +20,10 @@
 
     <color name="cornsilk">#FFF8DC</color>
 
-    <color name="moccasin">#FFE4B5</color>
+    <color name="moccasin">#ffb74d</color>
+
+    <color name="offwhite">#f5f5f5</color>
+
+    <color name="grey">#bdbdbd</color>
+
 </resources>
