@@ -39,7 +39,7 @@
         android:background="@android:color/holo_blue_light"
         tools:layout_editor_absoluteX="312dp"
         tools:layout_editor_absoluteY="20dp"
-        android:layout_below="@+id/guideline"
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 

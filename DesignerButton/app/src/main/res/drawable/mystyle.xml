@@ -4,10 +4,14 @@
 
 
 <item android:state_pressed="true">
-<shape android:shape="oval">
+
+    <shape android:shape="oval">
     <corners android:radius="40dp" ></corners>
+
     <stroke android:color="#009966"
         android:width="2dp"></stroke>
+
+
     <gradient android:startColor="@color/colorAccent"
         android:centerColor="@color/colorPrimary"
         android:endColor="@color/colorPrimaryDark">
